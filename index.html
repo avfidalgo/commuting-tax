@@ -1,0 +1,170 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/material-kit.css" />
+
+    <style>
+        body {
+            background-color: #efefef
+        }
+
+        .custom-label {
+            font-size: 20 !important;
+            color: #212121 !important;
+        }
+
+        .form-control.editable{
+
+
+          color: #03a9f4
+        }
+
+        .form-control.non-editable{
+
+          color: #4caf50
+        }
+
+        .form-control {
+
+          font-size: 31px;
+          height: 80px;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div>
+
+        <div class="col-sm-12">
+            <h1>Commuting  calculator</h1>
+
+
+            <br/>
+            <br/>
+
+
+            <div class="col-sm-3">
+
+                <h2>Your data</h2>
+
+
+                <div class="row">
+                  <label class="control-label custom-label">Transport Mode </label>
+                    <select size="1" name="yourdata_transportmode" id="yourdata_transportmode" onchange="onChangeTransportMode(event);">
+                      <option value="car_diesel">car (diesel)</option>
+                      <option value="car_gasoline">car (gasoline)</option>
+                      <option value="car_electric">car (electric)</option>
+                      <option value="bus">bus</option>
+                      <option value="train">train</option>
+                      <option value="bicycle">bicycle</option>
+                    </select>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Distance km (both ways)</label>
+                        <input type="number" class="form-control editable" name="yourdata_distance" id="yourdata_distance">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-3">
+                <h2>Your costs</h2>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Total cost (daily)</label>
+                        <input type="number" class="form-control non-editable" id="yourcosts_total">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Direct costs</label>
+                        <input type="number" class="form-control non-editable" id="yourcosts_direct">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Time costs</label>
+                        <input type="number" class="form-control non-editable" id="yourcosts_time">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">External costs</label>
+                        <input type="number" class="form-control non-editable" id="yourcosts_external">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Annual costs</label>
+                        <input type="number" class="form-control non-editable" id="yourcosts_annual">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+
+                <h2>Your tax deduction</h2>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Tax deduction</label>
+                        <input type="number" class="form-control non-editable" id="yourtaxdeduction_deduction">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Daily savings</label>
+                        <input type="number" class="form-control non-editable" id="yourtaxdeduction_daily">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group label-floating">
+                        <label class="control-label custom-label">Annual savings</label>
+                        <input type="number" class="form-control non-editable" id="yourtaxdeduction_annual">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+
+
+
+
+
+    <body>
+
+</html>
